@@ -1,0 +1,14 @@
+{
+    "name": "Gauntletrunner2025.Events.Editor.Tests",
+    "references": [
+        "Gauntletrunner2025.Events.Editor",
+        "Gauntletrunner2025.Events"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
