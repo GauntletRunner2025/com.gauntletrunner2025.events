@@ -8,9 +8,9 @@ public partial class ExampleListener : Listener
     public override ComponentType EventType => typeof(ExampleEvent);
     public override ComponentType HandledFlagType => typeof(Handled);
 
-    public override bool OnEvent(EntityManager em, Entity e)
+    public override bool OnEvent(EntityManager em, Entity entity)
     {
-        var example = SystemAPI.ManagedAPI.GetComponent<ExampleEvent>(e);
+        var example = SystemAPI.ManagedAPI.GetComponent<ExampleEvent>(entity);
         Debug.LogWarning($"[{this.GetType().Name}] {example.Value}");
         return true;
     }
