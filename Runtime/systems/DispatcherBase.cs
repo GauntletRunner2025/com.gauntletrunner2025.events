@@ -29,7 +29,8 @@ partial class Dispatcher : DispatcherBase {
                 ecb.AppendToBuffer(eventEntity, new Listeners { Value = pair.ListenerType });
             }
 
-            Debug.Log($"[{this.GetType().Name}] dispatching event on {eventEntity}");
+            // Debug.Log($"[{this.GetType().Name}] dispatching event on {eventEntity}");
+
         }
         ecb.Playback(EntityManager);
     }

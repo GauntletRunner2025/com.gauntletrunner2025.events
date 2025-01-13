@@ -14,7 +14,7 @@ public abstract partial class Listener : ListenerBase {
     public abstract ComponentType EventType { get; }
     public abstract ComponentType HandledFlagType { get; }
 
-    protected override void OnCreate() {
+    sealed protected override void OnCreate() {
         var e = EntityManager.CreateEntity();
         EntityManager.AddComponentData(e, new EventTypeListenerPair {
             EventType = EventType,
