@@ -56,7 +56,7 @@ public abstract partial class Listener : ListenerBase {
                     if (buffer[i].Value != typeof(ListenerFlag))
                         continue;
 
-                    Debug.Log($"[{this.GetType().Name}] removing listener flag from buffer on {entity}");
+                    // Debug.Log($"[{this.GetType().Name}] removing listener flag from buffer on {entity}");
                     buffer.RemoveAt(i);
                     break;
                 }
