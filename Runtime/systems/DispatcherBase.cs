@@ -25,7 +25,7 @@ partial class Dispatcher : DispatcherBase {
                     continue;
 
                 //Add the listener to the buffer
-                Debug.Log($"[{this.GetType().Name}] adding listener flag to buffer on {eventEntity}");
+                // Debug.Log($"[{this.GetType().Name}] adding listener flag to buffer on {eventEntity}");
                 ecb.AppendToBuffer(eventEntity, new Listeners { Value = pair.ListenerType });
             }
 
