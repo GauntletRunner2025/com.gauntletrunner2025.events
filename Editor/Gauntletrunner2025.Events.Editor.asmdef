@@ -1,0 +1,10 @@
+{
+    "name": "Gauntletrunner2025.Events.Editor",
+    "references": [
+      "Gauntletrunner2025.Events"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
