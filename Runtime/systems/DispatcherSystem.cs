@@ -2,7 +2,7 @@ using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
 
-partial class Dispatcher : DispatcherBase {
+partial class DispatcherSystem : DispatcherBase {
     protected override void OnUpdate() {
 
         using var ecb = new EntityCommandBuffer(Allocator.TempJob);
